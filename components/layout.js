@@ -72,9 +72,9 @@ export default function Layout({
                 </div>
             </footer>
 
-            <div>
+            <div className="whatsapp">
                 <a href="https://api.whatsapp.com/send?phone=+5549999640273&text=Gostaria de fazer um pedido!" target="_blank">
-                    <Image className="whatsapp" src="/whatsapp.png" width="64" height="64" />
+                    <Image src="/whatsapp.png" width="64" height="64" />
                 </a>
             </div>
 
