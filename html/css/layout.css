@@ -14,17 +14,20 @@ header {
     width: 1200px;
     margin: auto;
     margin-top: 20px;
+    overflow: hidden;
 }
 
 .logo {
-    width: 170px;
+    float: left;
+    width: 20%;
     padding: 10px;
+    
 }
 
 .info {
     float: right;
     margin-top: 20px;
-    width: 1000px;
+    width: 80%;
 }
 
 .info_box_location {
@@ -75,6 +78,7 @@ header {
     width: 800px;
     margin-top: 0px;    
 }
+
 .menubar li {
     text-align: center;
     float: left;
@@ -112,7 +116,7 @@ h1 {
 }
 
 .promotion {
-    overflow: auto;
+    overflow: hidden;
 }
 
 .card_promo {
@@ -196,11 +200,12 @@ h1 {
 }
 
 .depoiments {
-    overflow: auto;
+    overflow: hidden;
+    width: 1200px;
 }
 
 .card_depoiment {
-    width: 580px;
+    width: 50%;
     padding: 10px;
 }
 
@@ -265,9 +270,172 @@ footer {
 
 .whatsapp {
     position: fixed;
-    top: 90%;
+    top: 88%;
     left: 95%;
     padding: 10px;
-    z-index: 10000000;
     width: 78px;
 }
+
+/**
+@media (min-width: 740px) { 
+    header,
+    .menubar,
+    .content,
+    .footer_content {
+        width: 550px; 
+    }
+    .info_box_email, 
+    .info_box_location,
+    .info_box_contact {
+        display: none;
+    }
+    .menu {
+        height: 300px;
+    }
+    
+    .menubar {
+        width: var(--containerSize);
+        margin: auto;
+    }
+    
+    .menubar ul {
+        list-style: none;
+        width: 100%;
+        margin-top: 0px;    
+    }
+    .menubar li {
+        float: none;
+    }
+    .card_depoiment {
+        float: none;
+    }
+
+}
+
+@media (min-width: 960px) { 
+    header,
+    .menubar,
+    .content,
+    .depoiments,
+    .footer_content {
+        width: 750px; 
+    }
+    .info_box_email, .info_box_location {
+        display: none;
+    }
+}
+**/
+@media screen and (max-width: 1450px) { 
+    .whatsapp {
+        left: 93%;
+    }
+}
+
+@media screen and (max-width: 1200px) { 
+    header,
+    .menubar,
+    .content,
+    .depoiments,
+    .footer_content {
+        width: 970px; 
+    }
+    
+    .info_box_email {
+        display: none;
+    }
+
+    .card_hide {
+        display: none;
+    }
+
+    .whatsapp {
+        left: 90%
+    }
+}
+
+@media screen and (max-width: 960px) { 
+    header,
+    .menubar,
+    .content,
+    .depoiments,
+    .footer_content {
+        width: 810px; 
+    }
+    
+    .info_box_email {
+        display: none;
+    }
+
+    .card_hide {
+        display: none;
+    }
+
+    .whatsapp {
+        left: 90%
+    }
+}
+
+@media screen and (max-width: 770px) { 
+    header,
+    .menubar,
+    .content,
+    .depoiments,
+    .footer_content {
+        width: 550px; 
+    }
+    
+    .info_box_email {
+        display: none;
+    }
+
+    .info_box_location {
+        display: none;
+    }
+
+    .card_hide {
+        display: block;
+    }
+
+    .card_promo {
+        float: none;
+        margin: auto;
+        overflow: hidden;
+    }
+    .card_depoiment {
+        float: none;
+        width: 100%;
+    }
+
+    .whatsapp {
+        left: 78%;
+    }
+    .menu {
+        height: 220px;
+    }
+    .menubar ul {
+        margin: auto;
+        width: 550px;
+        padding: 0px;
+    }
+    .menubar li {
+        width: 550px;
+        text-align: center;
+        float: none;
+        padding: 20px;
+        margin-left: 10px;
+        height: 20px;
+    }
+    .footer_content {
+        margin-top: 10px;
+    }
+    .footer_contact {
+
+        width: 70%;
+    }
+    .footer_social_links {
+        width: 30%;
+        float: left;
+        text-align: left;
+    }
+}
+
