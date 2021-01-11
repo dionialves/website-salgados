@@ -65,15 +65,21 @@ export default function Layout({
                     </div>
 
                     <div class="footer_social_links fr">
-                        <Image src="/facebook.svg" width="36" height="36" />
-                        <Image src="/instagram.svg" width="36" height="36" />
-                        <Image src="/twitter.svg" width="36" height="36" />
+                        <div className="footer_social_links_img">
+                            <Image src="/instagram.svg" width="36" height="36" />
+                        </div>
+                        <div className="footer_social_links_img">
+                            <Image src="/twitter.svg" width="36" height="36" />
+                        </div>
+                        <div className="footer_social_links_img">
+                            <Image src="/facebook.svg" width="36" height="36" />
+                        </div>
                     </div>
                 </div>
             </footer>
 
             <div className="whatsapp">
-                <a href="https://api.whatsapp.com/send?phone=+5549999640273&text=Gostaria de fazer um pedido!" target="_blank">
+                <a href="https://api.whatsapp.com/send?phone=+5549999999999&text=Gostaria de fazer um pedido!" target="_blank">
                     <Image src="/whatsapp.png" width="64" height="64" />
                 </a>
             </div>
