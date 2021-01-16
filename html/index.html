@@ -3,45 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-5.15.1-web/css/all.min.css">
+
 
     <title>É Top Salgados</title>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img  src="./assets/logo.png" alt="E top salgados">
-        </div>
-        
-        <div class="info">
-            <div class="info_box_location">
-                <i class="fa fa fa-map-marker fa-3x info_img" aria-hidden="true"></i>
-                <div class="info_text">
-                    <strong>LOCALIZAÇÃO</strong>
-                    <p>Rua: Dom Saraiva, N 345, São Vicente, Chapeco-SC</p>
+        <div class="container">
+            <div class="flex-container">
+                <div class="header-flex-item item-logo">
+                    <a href="index.html">
+                        <img src="assets/logo.png">
+                    </a>
                 </div>
-            </div>
-            <div class="info_box_email">
-                    <i class="fa fa-envelope fa-3x info_img" aria-hidden="true"></i>                
-                <div class="info_text">
-                    <strong>EMAIL</strong>
-                    <p>contato@etopsalgados.com.br</p>
-                </div>
-            </div>
-            <div class="info_box_contact">
-                <i class="fa fa-phone-square fa-3x info_img" aria-hidden="true"></i>
-                <div class="info_text">
-                    <strong>CONTATO</strong>
-                    <p>(49) 99999-8888</p>
-                </div>
-            </div>
-        </div>
 
+                <div class="header-flex-item">
+                    <div class="header-item">
+                        <div class="header-item-left">
+                            <i class="fas fa-phone-square-alt fa-3x"></i>
+                        </div>
+                        <div class="header-body">
+                            <h4>CONTATO</h4>
+                            <p>(49) 99999-8888</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-flex-item">
+                    <div class="header-item">
+                        <div class="header-item-left">
+                            <i class="fas fa-envelope fa-3x info_img" aria-hidden="true"></i>
+                        </div>
+                        <div class="header-body">
+                            <h4>EMAIL</h4>
+                            <p>contato@etopsalgados.com.br</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-flex-item">
+                    <div class="header-item">
+                        <div class="header-item-left">
+                            <i class="fas fa-map-marker-alt fa-3x"></i>
+                        </div>
+                        <div class="header-body">
+                            <h4>LOCALIZAÇÃO</h4>
+                            <p>Rua: Dom Saraiva, N 345, São Vicente, Chapeco-SC</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
-    
-    <div class="menu">
+
+    <nav>
         <div class="menubar">
             <ul>
                 <a href="#"><li class="item_list">INÍCIO</li></a>
@@ -51,54 +69,50 @@
                 <a href="#"><li>FALE CONOSCO</li></a>
             </ul>
         </div>
-    </div>
-    
+    </nav>
+
     <div class="banner"></div>
 
-    <div class="content">
-        <section class="promotion">
-            <h1>PRODUTOS EM DESTAQUE</h1>
-            <div class="card_super_promo">
-                <img src="./assets/promo_bolinhadequeijo.jpg" alt="Promoção Coxinha">
-                <h4 class="nameItemSuperPromotion">OFERTA - Bolinha de Queijo</h4>
-                <span class="valueItemSuperPromotion">R$ 19,90</span>
-                <a href="#"><Button class="buttonItemPromotion">EU QUERO</Button></a>
-
-            </div>
-
-            <div class="card_promo fl">
-                <img src="./assets/promo_coxinha.jpg" alt="Promoção Coxinha">
-                <h4 class="nameItemPromotion">Promoção Coxinha</h4>
-                <span class="valueItemPromotion">R$ 39,90</span>
-                <a href="#"><Button class="buttonItemPromotion">EU QUERO</Button></a>
-            </div>
-            <div class="card_promo fl">
-                <img src="./assets/promo_bolinhadequeijo.jpg" alt="Promoção Coxinha">
-                <h4 class="nameItemPromotion">Promoção Bolinha de Queijo</h4>
-                <span class="valueItemPromotion">R$ 39,90</span>
-                <a href="#"><Button class="buttonItemPromotion">EU QUERO</Button></a>
-            </div>
-            <div class="card_promo card_hide fl">                
-                <img src="./assets/promo_kibe.jpg" alt="Promoção Coxinha">
-                <h4 class="nameItemPromotion">Promoção Quibe</h4>
-                <span class="valueItemPromotion">R$ 39,90</span>
-                <a href="#"><Button class="buttonItemPromotion">EU QUERO</Button></a>
-            </div>
-            <div class="card_promo card_hide fl">
-                <img src="./assets/promo_pastelzinho.jpg" alt="Promoção Coxinha">
-                <h4 class="nameItemPromotion">Promoção Pastelzinho</h4>
-                <span class="valueItemPromotion">R$ 39,90</span>
-                <a href="#"><Button class="buttonItemPromotion">EU QUERO</Button></a>
+    <div class="container main">
+        <h1>UM POUCO SOBRE NOSSOS SERVIÇOS</h1>
+        <section class="produts">
+            <div class="produts_cards">
+                <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
+                    of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,
+                    a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure
+                    Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word
+                    in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections
+                    1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero,
+                    written in 45 BC. This book is a treatise on the theory of ethics, very popular during the
+                    Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a
+                    line in section 1.10.32.
+                </p>
+                <div class="card">
+                    <img src="./assets/promo_coxinha.jpg" alt="Promoção Coxinha">
+                    <h4 class="nameItemPromotion">Promoção Coxinha</h4>
+                    <span class="valueItemPromotion">R$ 39,90</span>
+                </div>
+                <div class="card">
+                    <img src="./assets/promo_kibe.jpg" alt="Promoção Coxinha">
+                    <h4 class="nameItemPromotion">Promoção Coxinha</h4>
+                    <span class="valueItemPromotion">R$ 39,90</span>
+                </div>
+                <div class="card">
+                    <img src="./assets/promo_pastelzinho.jpg" alt="Promoção Coxinha">
+                    <h4 class="nameItemPromotion">Promoção Coxinha</h4>
+                    <span class="valueItemPromotion">R$ 39,90</span>
+                </div>
             </div>
         </section>
 
+        <h1>DEPOIMENTOS</h1>
         <section class="depoiments">
-            <h1>DEPOIMENTOS</h1>
-            
-            <div class="card_depoiment fl">
-                <img class="img_depoiments" src="./assets/face_depoiment_01.jpeg" alt="">
+            <div class="depoiment-flex-item">
+                <img class="depoiment-item-img" src="./assets/face_depoiment_01.jpeg" alt="">
+                <i class="fas fa-quote-right quote-custom"></i>
                 <p class="text_depoiment">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                     when an unknown printer took a galley.
                 </p>
@@ -106,10 +120,12 @@
                     LAURA DA SILVA
                 </p>
             </div>
-            <div class="card_depoiment fr">
-                <img class="img_depoiments" src="./assets/face_depoiment_02.jpeg" alt="">
+
+            <div class="depoiment-flex-item">
+                <img class="depoiment-item-img" src="./assets/face_depoiment_02.jpeg" alt="">
+                <i class="fas fa-quote-right quote-custom"></i>
                 <p class="text_depoiment">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                     when an unknown printer took a galley.
                 </p>
@@ -121,22 +137,28 @@
     </div>
 
     <footer>
-        <div class="footer_content">
-            <div class="footer_contact fl">
-                <p><strong>É TOP SALGADOS</strong></p>
-                <p>contato@contato.com.br - (49) 98659-9685</p>
-                <p>Rua: Dom Saraiva, N 345, São Vicente, Chapeco-SC</p>
-                <p class="developer_by">Desenvolvido por <a href="http://www.dionialves.com.br" target="_blank"><strong>Dioni Alves</strong></a>, Web Developer</p>
-            </div>
-
-            <div class="footer_social_links fr">
-                <img src="./assets/facebook.svg" alt="">
-                <img src="./assets/instagram.svg" alt="">
-                <img src="./assets/twitter.svg" alt="">
+        <div class="container">
+            <div class="footer-flex">
+                <div class="footer-item">
+                    <p><strong>É TOP SALGADOS</strong></p>
+                    <p>contato@contato.com.br - (49) 98659-9685</p>
+                    <p>Rua: Dom Saraiva, N 345, São Vicente, Chapeco-SC</p>
+                </div>
+                <div class="footer-item social_links">
+                    <a href="#"> <img src="./assets/facebook.svg" alt=""> </a>
+                    <a href="#"> <img src="./assets/instagram.svg" alt=""> </a>
+                    <a href="#"> <img src="./assets/twitter.svg" alt=""> </a>
+                </div>
+                <div class="footer-item developer_by">
+                    <p class="developer_by">
+                        Desenvolvido por
+                        <a href="http://www.dionialves.com.br" target="_blank">
+                            Dioni Alves
+                        </a>, Web Developer</p>
+                </div>
             </div>
 
         </div>
-
     </footer>
 
     <div>
@@ -144,5 +166,6 @@
             <img  class="whatsapp" src="./assets/whatsapp.png" />
         </a>
     </div>
+
 </body>
 </html>
